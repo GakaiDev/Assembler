@@ -23,17 +23,25 @@ public class SymbolTable {
         table.put("KDB", 24576); 
         }   
 
-        public void addEntry(String symbol, int address){
+        public void addEntry(String symbol, int address){  // Adiciona uma nova entrada à tabela de símbolos
             table.put(symbol, address);
         }
 
-        public boolean contains(String symbol){
+        public boolean contains(String symbol){  // Verifica se a tabela contém um símbolo
             return table.containsKey(symbol);
         }
 
-        public int getAddress(String symbol){
+        public int getAddress(String symbol){  // Retorna o endereço associado a um símbolo
             return table.get(symbol);
         }
 
-    }
+    
 
+    public void printTable() {
+        System.out.println("---- Symbol Table ----");
+        for (Map.Entry<String, Integer> entry : table.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());   // so mostra o conteudo da tabela para testes mesmo
+        }
+        System.out.println("----------------------");
+    }
+}

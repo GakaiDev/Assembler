@@ -5,3 +5,6 @@
 /mavenHomeManager.xml
 
 .idea/
+*.class
+*.log
+*.tmp

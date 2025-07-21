@@ -40,7 +40,7 @@ public class SymbolTable {
     public void printTable() {
         System.out.println("---- Symbol Table ----");
         for (Map.Entry<String, Integer> entry : table.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());   // so mostra o conteudo da tabela para testes mesmo
+            System.out.println(entry.getKey() + ": " + entry.getValue());   // so mostra o conteudo da tabela para teste
         }
         System.out.println("----------------------");
     }
